@@ -1,0 +1,1 @@
+# Prevents API bans by handling request throttling

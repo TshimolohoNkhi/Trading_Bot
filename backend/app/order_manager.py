@@ -1,0 +1,1 @@
+# Decides when to send trade signals to Rust.

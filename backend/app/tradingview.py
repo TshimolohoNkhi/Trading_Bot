@@ -1,0 +1,1 @@
+# Fetches market data and confirms trends.
