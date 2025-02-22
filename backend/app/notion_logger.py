@@ -1,1 +1,0 @@
-# Sends trade logs to your Notion board.
