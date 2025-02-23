@@ -26,14 +26,14 @@ def is_news_nearby():
     for news in news_events:
         event_time = news["time"]
         if event_time - datetime.timedelta(minutes=15) <= current_time <= event_time + datetime.timedelta(minutes=30):
-            print(f"🚨 HIGH-IMPACT NEWS: {news['event']} at {event_time}. Pausing trades.")
+            logger.info(f"🚨 HIGH-IMPACT NEWS: {news['event']} at {event_time}. Pausing trades.")
             return True  # Avoid trading
 
     return False
 
 # ✅ Modify Stop-Loss Based on News Volatility
 def adjust_stop_loss(df):
-    latest_atr = talib.ATR(df['high'], df['low'], df['close'], timeperiod=14).iloc[-1]
+    latest_atr = ta.atr(df['high'], df['low'], df['close'], timeperiod=14).iloc[-1]
     
     if is_news_nearby():
         return latest_atr * 3  # Increase stop-loss buffer
@@ -46,7 +46,7 @@ async def apply_smc_strategy(symbol):
         return
 
     if is_news_nearby():
-        print(f"🚨 {symbol}: Pausing trading due to upcoming news.")
+        logger.info(f"🚨 {symbol}: Pausing trading due to upcoming news.")
         return
 
     structure = detect_market_structure(df)
@@ -65,11 +65,11 @@ async def apply_smc_strategy(symbol):
     # ✅ Confirm Entry with SMC + News Filter
     if latest_structure["type"] == "BOS" and latest_fvg["type"] == latest_sweep["type"]:
         if latest_structure["direction"] == "bullish":
-            print(f"✅ BUY Entry for {symbol} at {latest_sweep['entry']} (SMC Confirmation)")
+            logger.info(f"✅ BUY Entry for {symbol} at {latest_sweep['entry']} (SMC Confirmation)")
             order_id = await place_order(symbol, "buy", latest_sweep["entry"], sl)
 
         elif latest_structure["direction"] == "bearish":
-            print(f"❌ SELL Entry for {symbol} at {latest_sweep['entry']} (SMC Confirmation)")
+            logger.info(f"❌ SELL Entry for {symbol} at {latest_sweep['entry']} (SMC Confirmation)")
             order_id = await place_order(symbol, "sell", latest_sweep["entry"], sl)
 
     # ✅ Trailing Stop Monitoring
