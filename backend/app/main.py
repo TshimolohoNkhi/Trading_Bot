@@ -9,3 +9,21 @@
 # Rust executes the trade
 # Initialises trailing stop losses and take profit
 # Once the trade is done, log everything on Notion
+
+# ✅ Run Bot
+async def main():
+    """Main function to run the bot."""
+    # Start WebSocket for real-time price updates
+    asyncio.create_task(binance_websocket())
+
+    # Rank symbols based on volatility and liquidity
+    ranked_symbols = await rank_symbols(config["symbols"])
+    top_symbols = [s['symbol'] for s in ranked_symbols[:3]]
+    logger.info(f"Top symbols for trading: {top_symbols}")
+
+    # Apply the strategy to top symbols
+    while True:
+        await asyncio.gather(*[apply_smc_strategy(symbol) for symbol in top_symbols])
+        await asyncio.sleep(60)  # Wait before the next iteration
+
+asyncio.run(main())
