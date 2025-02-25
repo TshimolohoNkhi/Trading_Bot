@@ -15,7 +15,6 @@ logging.basicConfig(
 logger = logging.getLogger()
 
 config = {
-    "symbols": ["BTC/USDT", "ETH/USDT", "BNB/USDT"],
     "risk_percent": 2,  # 2% risk per trade
     "trailing_stop_percent": 0.01,  # 1% Trailing stop
     "tp_levels": [1.5, 2, 3],  # Take Profit at 1.5x, 2x, 3x risk
@@ -34,7 +33,7 @@ initial_balance = 1000  # Starting balance in USDT
 symbols = ["BTC/USDT", "ETH/USDT", "BNB/USDT"]  # Define symbols once
 
 # Load historical data
-def load_historical_data(symbol, interval='1h', limit=1000):
+def load_historical_data(symbol, interval='5m', limit=1000):
     """Load historical OHLCV data for backtesting."""
     ohlcv = exchange.fetch_ohlcv(symbol, timeframe=interval, limit=limit)
     df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
