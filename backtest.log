@@ -1,0 +1,40 @@
+2025-03-22 10:30:09,321 - INFO - Starting backtest from 2025-03-01 for 14 days...
+2025-03-22 10:30:12,687 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-22 10:30:12,948 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-22 10:30:13,215 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-22 10:30:13,469 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-22 10:30:14,169 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-22 10:30:14,861 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-22 10:30:15,324 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-22 10:30:15,579 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-22 10:30:15,588 - INFO - Top 4 coins (24h): ['AVAX/USDT', 'SOL/USDT', 'DOGE/USDT', 'ADA/USDT']
+2025-03-22 10:30:59,771 - INFO - Starting backtest from 2025-03-01 for 14 days...
+2025-03-22 10:31:02,814 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-22 10:31:03,078 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-22 10:31:03,330 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-22 10:31:03,584 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-22 10:31:03,837 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-22 10:31:04,086 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-22 10:31:04,335 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-22 10:31:04,589 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-22 10:31:04,594 - INFO - Top 4 coins (24h): ['AVAX/USDT', 'SOL/USDT', 'DOGE/USDT', 'ADA/USDT']
+2025-03-22 10:33:19,729 - INFO - Starting backtest from 2025-03-01 for 14 days...
+2025-03-22 10:33:23,933 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-22 10:33:24,186 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-22 10:33:24,868 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-22 10:33:25,546 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-22 10:33:25,796 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-22 10:33:26,466 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-22 10:33:26,719 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-22 10:33:26,966 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-22 10:33:26,972 - INFO - Top 4 coins (24h): ['AVAX/USDT', 'SOL/USDT', 'DOGE/USDT', 'ADA/USDT']
+2025-03-22 10:35:42,410 - INFO - Starting backtest from 2024-03-01 for 14 days...
+2025-03-22 10:35:45,171 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-22 10:35:45,422 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-22 10:35:45,672 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-22 10:35:45,919 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-22 10:35:46,174 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-22 10:35:46,431 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-22 10:35:46,683 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-22 10:35:46,938 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-22 10:35:46,944 - INFO - Top 4 coins (24h): ['AVAX/USDT', 'SOL/USDT', 'DOGE/USDT', 'ADA/USDT']

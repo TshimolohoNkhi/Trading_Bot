@@ -1,1 +1,0 @@
-// Ensures API requests are within exchange limits.
