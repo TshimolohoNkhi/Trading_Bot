@@ -2,7 +2,7 @@ import pandas_ta as ta
 import pandas as pd
 from config.config import CONFIG
 
-"Write comments"
+"Calculates liquidity sweep"
 def detect_liquidity_sweep(df):
     sweeps = []
     for i in range(2, len(df)):
@@ -13,6 +13,7 @@ def detect_liquidity_sweep(df):
             sweeps.append({"type": "bearish", "level": prev_high, "entry": curr_close})
     return sweeps
 
+"Calculates dynamic stop loss and take profit"
 def calculate_dynamic_sl_tp(df):
     latest_atr = ta.atr(df['high'], df['low'], df['close'], length=14).iloc[-1]
     if pd.isna(latest_atr) or latest_atr <= 0:

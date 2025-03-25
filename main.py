@@ -10,7 +10,7 @@ def run_backtest():
     logger = setup_logging()
     logger.info(f"Starting backtest with initial balance {INITIAL_BALANCE:.2f} USDT...")
     
-    # Load data for all 20 coins
+    "Loads 1000 candles for all 20 coins"
     historical_data = {coin: load_historical_data(coin) for coin in SYMBOLS}
     historical_data = {k: v for k, v in historical_data.items() if not v.empty}
     if not historical_data:
@@ -20,46 +20,61 @@ def run_backtest():
     balance = INITIAL_BALANCE
     all_trades = []
     equity_curve = [balance]
+    active_trade = None
+    active_symbol = None
     
-    # Simulate real-time trading across all coins
-    max_length = max(len(df) for df in historical_data.values())
+    "Loops over 1000 candles (3.5 days)"
+    max_length = min(1000, max(len(df) for df in historical_data.values()))  # Cap at 1000
     for i in range(max(14, 200), max_length):
         if balance < CONFIG["min_balance"]:
             logger.info(f"Stopped at step {i}: Balance too low ({balance:.2f})")
             break
         
-        # Get current data slice for all coins
+        "Current data slice for all coins"
         current_data = {symbol: df.iloc[:i + 1] for symbol, df in historical_data.items() if len(df) > i}
         if not current_data:
             continue
         
-        # Rank coins and pick top 4 for this trade
-        top_symbols = research_profitable_coins(current_data)[:4]
-        logger.debug(f"Step {i}: Top coins - {top_symbols}")
+        "Manage active trade if exists"
+        if active_trade:
+            balance, active_trade, trade_history, equity_step = apply_smc_strategy(
+                current_data, [], active_symbol, balance, active_trade
+            )
+            all_trades.extend(trade_history)
+            equity_curve.extend(equity_step[1:])
+            if not active_trade:  # Trade ended
+                active_symbol = None
+            continue
         
-        # Check each top coin for trade conditions
-        for symbol in top_symbols:
-            df = current_data[symbol]
-            final_balance, trade_history, trade_equity = apply_smc_strategy(df, symbol, balance)
-            if trade_history:  # Trade occurred
-                all_trades.extend(trade_history)
-                balance = final_balance
-                equity_curve.extend(trade_equity[1:])
-                break  # Move to next step after one trade
+        "Pick top 4 coins"
+        top_symbols = research_profitable_coins(current_data)
+        if not top_symbols:
+            logger.debug(f"Step {i}: No favorable coins found")
+            continue
+        
+        "Check top 4 for entry that meets conditions"
+        balance, active_trade, trade_history, equity_step = apply_smc_strategy(
+            current_data, top_symbols, None, balance, None
+        )
+        all_trades.extend(trade_history)
+        equity_curve.extend(equity_step[1:])
+        if active_trade:  # Trade started
+            active_symbol = [s for s in top_symbols if active_trade["entry_price"] in current_data[s]['close'].values][-1]
+            logger.debug(f"Step {i}: Trade started on {active_symbol}")
 
-    # 20% carryover at end
+    "20% carryover"
     total_profit = balance - INITIAL_BALANCE
     trading_balance = balance * CONFIG["carryover_percent"]
     reserve_balance = balance * (1 - CONFIG["carryover_percent"])
 
-    # Summary
+    "Summary"
     total_trades = len(all_trades)
     total_wins = len([t for t in all_trades if t["type"] == "win"])
     total_losses = len([t for t in all_trades if t["type"] == "loss"])
     total_timeouts = len([t for t in all_trades if t["type"] == "timeout"])
     win_profit = sum(t["profit_loss"] for t in all_trades if t["type"] == "win")
     loss_profit = sum(t["profit_loss"] for t in all_trades if t["type"] in ["loss", "timeout"])
-    print(f"Summary (14-day backtest):")
+    print(f"Summary (3.5-day backtest):")
     print(f"  Total Profit: {total_profit:.2f} USDT")
     print(f"  Trading Balance: {trading_balance:.2f} USDT")
     print(f"  Reserve Balance: {reserve_balance:.2f} USDT")

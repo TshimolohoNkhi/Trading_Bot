@@ -43,8 +43,9 @@ def is_favorable_market(current_data):
         volatility = atr / df['close'].iloc[-1]
         volatilities.append(volatility)
 
-        df['ema5'] = ta.ema(df['close'], length=5)
-        momentum = df['close'].iloc[-1] < df['ema5'].iloc[-1]
+        df_copy = df.copy()
+        df_copy['ema5'] = ta.ema(df_copy['close'], length=5)
+        momentum = df_copy['close'].iloc[-1] < df_copy['ema5'].iloc[-1]
         momentum_scores.append(1 if momentum else 0)
 
     if not volatilities or not momentum_scores:
