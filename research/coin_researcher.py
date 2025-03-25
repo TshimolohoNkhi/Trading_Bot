@@ -54,7 +54,7 @@ def is_favorable_market(current_data):
     avg_volatility = sum(volatilities) / len(volatilities)
     bearish_ratio = sum(momentum_scores) / len(momentum_scores)
 
-    favorable = avg_volatility > 0.005 and bearish_ratio > 0.6
+    favorable = avg_volatility > 0.002 and bearish_ratio > 0.4
     logger.debug(f"Market check: Avg Volatility = {avg_volatility:.4f}, Bearish Ratio = {bearish_ratio:.2f}, Favorable = {favorable}")
     return favorable
 
