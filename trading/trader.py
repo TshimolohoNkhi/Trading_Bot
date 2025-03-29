@@ -19,18 +19,18 @@ def apply_smc_strategy(current_data_dict, top_symbols, symbol, initial_balance, 
             active_trade["entry_index"], len(current_data) - 1, timestamp
         )
         equity_curve.append(balance)
-        return balance, active_trade, trade_history, equity_curve
+        return balance, active_trade, trade_history, equity_curve, symbol
 
     "Checks if there are funds to trade before entering a trade, if not, it skips the trade and logs a warning"
     if balance < CONFIG["min_balance"]:
         logger.warning(f"Balance too low ({balance:.2f}) to trade")
-        return balance, None, trade_history, equity_curve
+        return balance, None, trade_history, equity_curve, None
 
     "Performs risk calculation (how much money can be lost during a trade, which is $1.40)"
     risk_amount = INITIAL_BALANCE * (CONFIG["risk_percent"] / 100)
     if balance < risk_amount:
         logger.warning(f"Insufficient balance ({balance:.2f}) to trade")
-        return balance, None, trade_history, equity_curve
+        return balance, None, trade_history, equity_curve, None
 
     "Loops through top 4 coins and checks if coins has a bearish momentum and liquidity sweeps"
     for watch_symbol in top_symbols:

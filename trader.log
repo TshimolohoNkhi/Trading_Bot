@@ -11145,3 +11145,54 @@
 2025-03-29 06:26:41,470 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'ADA/USDT']
 2025-03-29 06:26:41,478 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17112347.3296, Fee=0.1993
 2025-03-29 06:26:41,480 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.1969, Net: 1.0039, Size: 17112347.3296
+2025-03-29 06:29:56,504 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:29:56,759 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:29:57,014 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:29:57,269 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:29:57,521 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:29:57,780 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:29:58,039 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:29:58,293 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:29:58,548 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:29:58,800 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:29:59,062 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:29:59,313 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:29:59,574 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:29:59,828 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:30:00,075 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:30:00,332 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:30:00,589 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:30:00,888 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:30:01,176 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:30:01,431 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:30:02,239 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:30:09,308 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'EOS/USDT', 'LINK/USDT']
+2025-03-29 06:30:09,316 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17601214.3299, Fee=0.2050
+2025-03-29 06:30:09,317 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.2029, Net: 0.9922, Size: 17601214.3299
+2025-03-29 06:34:51,037 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:34:51,293 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:34:51,552 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:34:51,806 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:34:52,063 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:34:52,318 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:34:52,578 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:34:52,830 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:34:53,077 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:34:53,325 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:34:53,572 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:34:53,820 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:34:54,068 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:34:54,318 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:34:54,569 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:34:54,819 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:34:55,279 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:34:55,530 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:34:55,780 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:34:56,028 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:34:56,848 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:35:03,627 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'EOS/USDT']
+2025-03-29 06:35:03,634 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17601214.3299, Fee=0.2050
+2025-03-29 06:35:03,636 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.2029, Net: 0.9922, Size: 17601214.3299
+2025-03-29 06:42:53,822 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:42:54,079 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:42:54,329 - INFO - Loaded data for DOGE/USDT: 1000 rows
