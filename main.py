@@ -37,7 +37,7 @@ def run_backtest():
         
         "Manage active trade if exists"
         if active_trade:
-            balance, active_trade, trade_history, equity_step = apply_smc_strategy(
+            balance, active_trade, trade_history, equity_curve, watch_symbol = apply_smc_strategy(
                 current_data, [], active_symbol, balance, active_trade
             )
             all_trades.extend(trade_history)
@@ -53,13 +53,12 @@ def run_backtest():
             continue
         
         "Check top 4 for entry that meets conditions"
-        balance, active_trade, trade_history, equity_step = apply_smc_strategy(
+        balance, active_trade, trade_history, equity_step, active_symbol = apply_smc_strategy(
             current_data, top_symbols, None, balance, None
         )
         all_trades.extend(trade_history)
         equity_curve.extend(equity_step[1:])
         if active_trade:  # Trade started
-            active_symbol = [s for s in top_symbols if active_trade["entry_price"] in current_data[s]['close'].values][-1]
             logger.debug(f"Step {i}: Trade started on {active_symbol}")
 
     "20% carryover"

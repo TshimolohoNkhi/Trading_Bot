@@ -79,10 +79,10 @@ def apply_smc_strategy(current_data_dict, top_symbols, symbol, initial_balance, 
         logger.info(f"📈 {watch_symbol}: Entry={entry_price:.2f}, SL={active_trade['stop_loss']:.2f}, TP={active_trade['tp_targets'][0]:.2f}, Size={position_size:.4f}, Fee={entry_fee:.4f}")
         balance -= entry_fee
         equity_curve.append(balance)
-        return balance, active_trade, trade_history, equity_curve
+        return balance, active_trade, trade_history, equity_curve, watch_symbol
 
     "If none of the top 4 coins met the conditions, balance is returned"
-    return balance, None, trade_history, equity_curve
+    return balance, None, trade_history, equity_curve, None
 
 "Checks if the last price is lower than the average price, if so is_bearish_momentim is true"
 def is_bearish_momentum(df):
@@ -112,7 +112,7 @@ def manage_trade(symbol, current_price, trade, balance, trade_history, entry_ind
         logger.info(f"⏳ {symbol} - Expired at {current_price:.4f}, P/L: {profit_loss:.4f}, Fee: {fee:.4f}, Net: {net_profit:.4f}, Size: {position_size:.4f}")
         balance += net_profit
         trade_history.append({"type": "timeout", "profit_loss": net_profit, "symbol": symbol, "timestamp": timestamp})
-        return balance, None, trade_history
+        return balance, trade, trade_history
 
     "If trade hit stop loss, close trade as a loss, return updated balance and trading history"
     if current_price >= stop_loss:

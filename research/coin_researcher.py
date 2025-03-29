@@ -74,8 +74,9 @@ def research_profitable_coins(current_data):
         volatility = df['close'].pct_change().std() 
 
         # Bearish momentum check
-        df['ema5'] = ta.ema(df['close'], length=5)
-        is_bearish = df['close'].iloc[-1] < df['ema5'].iloc[-1]
+        df_copy = df.copy()
+        df_copy['ema5'] = ta.ema(df_copy['close'], length=5)
+        is_bearish = df_copy['close'].iloc[-1] < df_copy['ema5'].iloc[-1]
 
         # Sentiment check
         sentiment = fetch_sentiment(symbol)

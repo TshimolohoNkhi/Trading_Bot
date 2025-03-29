@@ -10920,3 +10920,228 @@
 2025-03-25 17:18:34,193 - INFO - Market conditions unfavorable - no coins selected
 2025-03-25 17:18:34,240 - INFO - Market conditions unfavorable - no coins selected
 2025-03-25 17:18:34,297 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:06,889 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-25 17:26:07,365 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-25 17:26:07,617 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-25 17:26:07,880 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-25 17:26:08,135 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-25 17:26:08,390 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-25 17:26:08,646 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-25 17:26:08,896 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-25 17:26:09,152 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-25 17:26:09,397 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-25 17:26:09,653 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-25 17:26:09,904 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-25 17:26:10,160 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-25 17:26:10,414 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-25 17:26:10,671 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-25 17:26:10,926 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-25 17:26:11,184 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-25 17:26:11,436 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-25 17:26:11,693 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-25 17:26:11,954 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-25 17:26:13,248 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-25 17:26:18,430 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,476 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,522 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,570 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,614 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,655 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,698 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,745 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,792 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,839 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,888 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,937 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:18,983 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,033 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,085 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,135 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,186 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,232 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,277 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,331 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,381 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,427 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,471 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,513 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,554 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,602 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,650 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,692 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,737 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,790 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,840 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,889 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,940 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:19,988 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:20,037 - INFO - Market conditions unfavorable - no coins selected
+2025-03-25 17:26:20,184 - INFO - Top coins selected: ['LINK/USDT', 'DOT/USDT', 'EOS/USDT', 'ALGO/USDT']
+2025-03-25 17:26:20,199 - INFO - 📈 LINK/USDT: Entry=14.35, SL=14.40, TP=14.31, Size=30.5371, Fee=0.3288
+2025-03-29 06:02:42,423 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:02:42,679 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:02:43,365 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:02:44,054 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:02:44,306 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:02:45,001 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:02:45,253 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:02:45,509 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:02:45,983 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:02:46,454 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:02:46,705 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:02:46,956 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:02:47,653 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:02:47,907 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:02:48,373 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:02:48,847 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:02:49,100 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:02:49,353 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:02:49,830 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:02:50,085 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:02:50,978 - INFO - generated new fontManager
+2025-03-29 06:02:51,239 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:02:57,498 - INFO - Market conditions unfavorable - no coins selected
+2025-03-29 06:02:57,605 - INFO - Top coins selected: ['DOGE/USDT', 'LINK/USDT', 'ADA/USDT', 'ALGO/USDT']
+2025-03-29 06:02:57,612 - INFO - 📈 DOGE/USDT: Entry=0.21, SL=0.21, TP=0.20, Size=1756.5987, Fee=0.2702
+2025-03-29 06:09:05,440 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:09:05,688 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:09:05,934 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:09:06,186 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:09:06,435 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:09:06,680 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:09:06,932 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:09:07,183 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:09:07,433 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:09:07,685 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:09:07,935 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:09:08,182 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:09:08,434 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:09:08,693 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:09:08,951 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:09:09,198 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:09:09,449 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:09:09,699 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:09:09,950 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:09:10,198 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:09:10,989 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:09:16,196 - INFO - Top coins selected: ['DOGE/USDT', 'LINK/USDT', 'ADA/USDT', 'DOT/USDT']
+2025-03-29 06:09:16,204 - INFO - 📈 DOGE/USDT: Entry=0.21, SL=0.21, TP=0.20, Size=1756.5987, Fee=0.2702
+2025-03-29 06:11:39,774 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:11:40,034 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:11:40,290 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:11:41,397 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:11:41,655 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:11:42,773 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:11:43,023 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:11:43,278 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:11:43,529 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:11:43,788 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:11:44,044 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:11:44,305 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:11:44,560 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:11:45,432 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:11:45,692 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:11:45,952 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:11:46,214 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:11:46,473 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:11:46,730 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:11:47,204 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:11:48,459 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:11:53,857 - INFO - Top coins selected: ['DOGE/USDT', 'LINK/USDT', 'VET/USDT', 'ADA/USDT']
+2025-03-29 06:11:53,872 - INFO - 📈 DOGE/USDT: Entry=0.21, SL=0.21, TP=0.20, Size=1767.2094, Fee=0.2719
+2025-03-29 06:19:48,705 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:19:48,961 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:19:49,219 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:19:49,471 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:19:49,719 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:19:49,980 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:19:50,233 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:19:50,489 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:19:50,740 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:19:50,995 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:19:51,245 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:19:52,136 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:19:52,596 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:19:53,479 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:19:53,940 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:19:54,188 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:19:54,852 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:19:55,100 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:19:55,998 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:19:56,251 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:19:57,014 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:20:04,386 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'ADA/USDT']
+2025-03-29 06:20:04,394 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17225808.0697, Fee=0.2006
+2025-03-29 06:20:04,395 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.1987, Net: 1.0007, Size: 17225808.0697
+2025-03-29 06:20:54,660 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:20:54,917 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:20:55,169 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:20:55,424 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:20:55,681 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:20:55,930 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:20:56,185 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:20:56,445 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:20:56,696 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:20:56,953 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:20:57,204 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:20:57,462 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:20:57,721 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:20:57,976 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:20:58,227 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:20:58,476 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:20:58,730 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:20:58,980 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:20:59,230 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:20:59,482 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:21:00,262 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:21:05,491 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'ADA/USDT']
+2025-03-29 06:21:05,498 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17245107.7230, Fee=0.2008
+2025-03-29 06:21:05,499 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.1983, Net: 1.0009, Size: 17245107.7230
+2025-03-29 06:22:04,054 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:22:04,310 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:22:04,568 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:22:04,832 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:22:05,088 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:22:05,345 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:22:05,610 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:22:05,860 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:22:06,125 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:22:06,376 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:22:06,838 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:22:07,105 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:22:07,362 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:22:07,624 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:22:07,876 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:22:08,126 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:22:08,382 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:22:08,634 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:22:08,889 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:22:09,144 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:22:09,987 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:22:15,261 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'ADA/USDT']
+2025-03-29 06:22:15,268 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17245107.7230, Fee=0.2008
+2025-03-29 06:22:15,269 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.1983, Net: 1.0009, Size: 17245107.7230
+2025-03-29 06:26:30,589 - INFO - Loaded data for BTC/USDT: 1000 rows
+2025-03-29 06:26:30,842 - INFO - Loaded data for ETH/USDT: 1000 rows
+2025-03-29 06:26:31,094 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:26:31,342 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:26:31,596 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:26:31,851 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:26:32,105 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:26:32,358 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:26:32,611 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:26:32,872 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:26:33,124 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:26:33,384 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:26:33,642 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:26:33,904 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:26:34,155 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:26:34,412 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:26:34,668 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:26:34,926 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:26:35,178 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:26:35,428 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:26:36,184 - INFO - Starting backtest with initial balance 28.00 USDT...
+2025-03-29 06:26:41,470 - INFO - Top coins selected: ['SHIB/USDT', 'DOGE/USDT', 'LINK/USDT', 'ADA/USDT']
+2025-03-29 06:26:41,478 - INFO - 📈 SHIB/USDT: Entry=0.00, SL=0.00, TP=0.00, Size=17112347.3296, Fee=0.1993
+2025-03-29 06:26:41,480 - INFO - 🏆 SHIB/USDT - TP1 HIT at 0.0000, P/L: 1.4000, Fee: 0.1969, Net: 1.0039, Size: 17112347.3296
