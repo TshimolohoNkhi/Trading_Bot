@@ -71,7 +71,7 @@ def apply_smc_strategy(current_data_dict, top_symbols, symbol, initial_balance, 
             "entry_price": entry_price,
             "stop_loss": entry_price + sl,
             "position_size": position_size,
-            "tp_targets": [entry_price - sl * level for level in CONFIG["tp_levels"]],
+            "tp_targets": [entry_price - sl * 1.2 for level in CONFIG["tp_levels"]],
             "tp_hit": [False] * len(CONFIG["tp_levels"]),
             "entry_index": len(current_data) - 1,
             "entry_fee": entry_fee
@@ -128,21 +128,32 @@ def manage_trade(symbol, current_price, trade, balance, trade_history, entry_ind
 
     "If trade hit a take profit level that has not been hit before, close trade at a profit, return updated. balance and trading history"
     for i, tp in enumerate(tp_targets):
-        if not trade["tp_hit"][i] and current_price <= tp:
-            profit_loss = (entry_price - tp) * position_size
-            fee = position_size * current_price * CONFIG["fee"]
-            net_profit = profit_loss - fee - entry_fee
-            logger.info(f"🏆 {symbol} - TP{i+1} HIT at {current_price:.4f}, P/L: {profit_loss:.4f}, Fee: {fee:.4f}, Net: {net_profit:.4f}, Size: {position_size:.4f}")
-            balance += net_profit
-            trade_history.append({"type": "win", "profit_loss": net_profit, "symbol": symbol, "timestamp": timestamp})
-            return balance, None, trade_history
+            if not trade["tp_hit"][i] and current_price <= tp:
+                trade["tp_hit"][i] = True
+                if i == 0:  # TP1: Move to breakeven
+                    new_stop_loss = entry_price
+                    logger.debug(f"🏆 {symbol} - TP1 HIT at {current_price:.4f}, SL → Breakeven: {new_stop_loss:.4f}")
+                    trade["stop_loss"] = new_stop_loss
+                elif i == 1:  # TP2: Trail to TP1
+                    new_stop_loss = tp_targets[0]  # Lock TP1 profit
+                    logger.debug(f"🏆 {symbol} - TP2 HIT at {current_price:.4f}, SL → TP1: {new_stop_loss:.4f}")
+                    trade["stop_loss"] = new_stop_loss
+                elif i == 2:  # TP3: Exit fully
+                    profit_loss = (entry_price - tp) * position_size
+                    fee = position_size * current_price * CONFIG["fee"]
+                    net_profit = profit_loss - fee - entry_fee
+                    logger.info(f"🏆 {symbol} - TP3 HIT at {current_price:.4f}, P/L: {profit_loss:.4f}, Net: {net_profit:.4f}")
+                    balance += net_profit
+                    trade_history.append({"type": "win", "profit_loss": net_profit, "symbol": symbol, "timestamp": timestamp})
+                    return balance, None, trade_history
+                break  # Only handle one TP per candle
 
     "If trade moves favourably adjust stop-loss to lock in profits"
-    if current_price < entry_price:
-        new_stop_loss = min(stop_loss, current_price * (1 + CONFIG["trailing_stop_percent"]))
-        if new_stop_loss != stop_loss:
-            logger.debug(f"🔄 {symbol} - Adjusting SL: {stop_loss:.4f} → {new_stop_loss:.4f}")
-            trade["stop_loss"] = new_stop_loss
+    if trade["tp_hit"][1]:  # TP2 hit, trail tighter
+            new_stop_loss = min(stop_loss, current_price * (1 + CONFIG["trailing_stop_percent"]))
+            if new_stop_loss != stop_loss:
+                logger.debug(f"🔄 {symbol} - Trailing SL: {stop_loss:.4f} → {new_stop_loss:.4f}")
+                trade["stop_loss"] = new_stop_loss
 
     "If none of the above are met, return balance and trade information and try again"
     return balance, trade, trade_history
