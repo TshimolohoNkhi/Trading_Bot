@@ -11196,3 +11196,21 @@
 2025-03-29 06:42:53,822 - INFO - Loaded data for BTC/USDT: 1000 rows
 2025-03-29 06:42:54,079 - INFO - Loaded data for ETH/USDT: 1000 rows
 2025-03-29 06:42:54,329 - INFO - Loaded data for DOGE/USDT: 1000 rows
+2025-03-29 06:42:54,582 - INFO - Loaded data for XRP/USDT: 1000 rows
+2025-03-29 06:42:54,837 - INFO - Loaded data for BNB/USDT: 1000 rows
+2025-03-29 06:42:55,089 - INFO - Loaded data for ADA/USDT: 1000 rows
+2025-03-29 06:42:55,343 - INFO - Loaded data for SOL/USDT: 1000 rows
+2025-03-29 06:42:55,594 - INFO - Loaded data for DOT/USDT: 1000 rows
+2025-03-29 06:42:55,853 - INFO - Loaded data for LINK/USDT: 1000 rows
+2025-03-29 06:42:56,103 - INFO - Loaded data for UNI/USDT: 1000 rows
+2025-03-29 06:42:56,352 - INFO - Loaded data for SHIB/USDT: 1000 rows
+2025-03-29 06:42:56,603 - INFO - Loaded data for AVAX/USDT: 1000 rows
+2025-03-29 06:42:56,861 - INFO - Loaded data for LTC/USDT: 1000 rows
+2025-03-29 06:42:57,118 - INFO - Loaded data for BCH/USDT: 1000 rows
+2025-03-29 06:42:57,366 - INFO - Loaded data for XLM/USDT: 1000 rows
+2025-03-29 06:42:57,622 - INFO - Loaded data for ALGO/USDT: 1000 rows
+2025-03-29 06:42:57,877 - INFO - Loaded data for VET/USDT: 1000 rows
+2025-03-29 06:42:58,129 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:42:58,384 - INFO - Loaded data for EOS/USDT: 1000 rows
+2025-03-29 06:42:58,640 - INFO - Loaded data for TRX/USDT: 1000 rows
+2025-03-29 06:42:59,419 - INFO - Starting backtest with initial balance 28.00 USDT...
