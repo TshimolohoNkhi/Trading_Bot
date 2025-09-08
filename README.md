@@ -93,9 +93,7 @@ The bot monitors and trades the following 20 cryptocurrency pairs:
 
 The bot provides comprehensive performance tracking through:
 - **Real-time Logging**: All trades logged with entry/exit prices and P&L
-- **Equity Curve**: Visual representation of account balance over time
 - **Trade Statistics**: Win rate, average profit/loss, and drawdown metrics
-- **Risk Metrics**: Position sizing validation and risk exposure monitoring
 
 ## 🛠️ Technical Implementation
 
@@ -103,8 +101,6 @@ The bot provides comprehensive performance tracking through:
 - **Python 3.7+**: Core programming language
 - **CCXT**: Cryptocurrency exchange integration
 - **Pandas & Pandas-TA**: Data manipulation and technical analysis
-- **TextBlob**: Natural language processing for sentiment analysis
-- **Matplotlib**: Data visualization and equity curve plotting
 
 ### Key Algorithms
 - **Liquidity Sweep Detection**: Custom algorithm for identifying market manipulation patterns
