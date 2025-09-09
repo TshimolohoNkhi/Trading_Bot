@@ -95,6 +95,10 @@ The bot provides comprehensive performance tracking through:
 - **Real-time Logging**: All trades logged with entry/exit prices and P&L
 - **Trade Statistics**: Win rate, average profit/loss, and drawdown metrics
 
+## 🖼️ Diagrams & Screenshots
+<img width="1280" height="800" alt="Screenshot 2025-09-09 at 18 42 47" src="https://github.com/user-attachments/assets/a64ac065-ff79-49b9-9b82-5670c476bf21" />
+<img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/d54e6e8b-884e-4043-9412-95514461d0e3" />
+
 ## 🛠️ Technical Implementation
 
 ### Technologies Used
